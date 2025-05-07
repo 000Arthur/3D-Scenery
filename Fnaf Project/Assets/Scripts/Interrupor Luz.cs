@@ -1,19 +1,17 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class BotonPuerta : MonoBehaviour
+public class BotonLuz : MonoBehaviour
 {
     public Camera camaraJugador;   // arrástrala desde el inspector
-    public bool doorState;
     public float range;
     private InputSystem_Actions input;
-    public Animator Door;
+    public Light luz;
     public string activator;
 
     private void Awake()
     {
         input = new InputSystem_Actions();
-        doorState = true;
     }
 
     private void OnEnable()
@@ -37,10 +35,9 @@ public class BotonPuerta : MonoBehaviour
         {
             if (hit.collider.CompareTag(activator))
             {
-                doorState = !doorState;
+                luz.enabled = !luz.enabled;
             }
-            if (doorState) Door.Play("Cerrar");
-            else Door.Play("Abrir");
         }
+    
     }
 }

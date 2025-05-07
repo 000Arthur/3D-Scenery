@@ -990,6 +990,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Gameplay",
+            "id": "bc6b4da9-45c3-4432-a801-d3989308b51a",
+            "actions": [
+                {
+                    "name": "ToggleLight",
+                    "type": "Button",
+                    "id": "f675af66-ca5a-4a6b-a20c-3aeadeb1f21c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "03f4f017-7399-4410-a127-8c2b55c3700b",
+                    "path": "<Keyboard>/#(E)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToggleLight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

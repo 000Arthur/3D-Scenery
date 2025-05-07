@@ -6,7 +6,7 @@ public class PhoneInteract : MonoBehaviour
 {
     public Camera camaraJugador;   // arrástrala desde el inspector
     public float range;
-    private Controles input;
+    private InputSystem_Actions input;
     private bool firstClick;
 
     public AudioSource Ring;
@@ -14,7 +14,7 @@ public class PhoneInteract : MonoBehaviour
 
     private void Awake()
     {
-        input = new Controles();
+        input = new InputSystem_Actions();
     }
 
     private void OnEnable()
