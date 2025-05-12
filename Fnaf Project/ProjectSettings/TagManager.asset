@@ -5,10 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Phone
-  - Boton Puerta
   - Boton Puerta 2
   - Boton Luz 1
   - Boton Luz 2
+  - Boton Puerta 1
   layers:
   - Default
   - TransparentFX
