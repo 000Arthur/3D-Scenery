@@ -1,45 +1,82 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ClosetLightSwitch : MonoBehaviour
 {
     public Light closetLight;
     public AudioSource clickSound;
-
-    private bool isOn = false;
-
     public Renderer lampRenderer;
 
     public Color lightOnColor = Color.yellow;
     public Color lightOffColor = Color.gray;
 
-    void Start()
+    public Camera camaraJugador;
+    public float range;
+
+    public string activatorTag = "Boton supplyCloset";
+
+    private bool isOn = false;
+    private InputSystem_Actions input;
+
+    private void Awake()
     {
-        closetLight = GetComponentInChildren<Light>();
-        lampRenderer = GetComponentInChildren<MeshRenderer>();
+        input = new InputSystem_Actions();
+      
+    }
 
-        if (closetLight != null)
-            closetLight.enabled = isOn;
+    private void OnEnable()
+    {
+        input.Gameplay.ToggleLight.performed += IntentarActivarLuzInput;
+        input.Gameplay.Enable();
+    }
 
+    private void OnDisable()
+    {
+        input.Gameplay.ToggleLight.performed -= IntentarActivarLuzInput;
+        input.Gameplay.Disable();
+    }
+
+    private void IntentarActivarLuzInput(InputAction.CallbackContext context)
+    {
+        IntentarActivarLuz();
+    }
+
+
+    private void Start()
+    {
+        if (closetLight == null)
+            closetLight = GetComponentInChildren<Light>();
+
+        if (lampRenderer == null)
+            lampRenderer = GetComponentInChildren<MeshRenderer>();
+
+        closetLight.enabled = isOn;
         ChangeLampColor(isOn);
     }
 
-    void Update()
+    void IntentarActivarLuz()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        Ray ray = camaraJugador.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2));
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, range))
         {
-            isOn = !isOn;
-            closetLight.enabled = isOn;
+            if (hit.collider.CompareTag(activatorTag) || Input.GetKeyDown(KeyCode.E))
+            {
+                isOn = !isOn;
+                closetLight.enabled = isOn;
 
-            if (clickSound != null)
-                clickSound.Play();
+                if (clickSound != null)
+                    clickSound.Play();
 
-            ChangeLampColor(isOn);
+                ChangeLampColor(isOn);
+            }
         }
     }
 
     void ChangeLampColor(bool isOn)
     {
-        if (lampRenderer != null)
+        if (lampRenderer != null && lampRenderer.materials.Length > 1)
         {
             lampRenderer.materials[1].SetColor("_BaseColor", isOn ? lightOnColor : lightOffColor);
 

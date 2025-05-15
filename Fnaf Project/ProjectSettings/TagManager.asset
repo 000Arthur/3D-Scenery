@@ -9,6 +9,7 @@ TagManager:
   - Boton Luz 1
   - Boton Luz 2
   - Boton Puerta 1
+  - Boton supplyCloset
   layers:
   - Default
   - TransparentFX
