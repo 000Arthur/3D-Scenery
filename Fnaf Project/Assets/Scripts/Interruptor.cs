@@ -11,10 +11,7 @@ public class LuzControlRaycast : MonoBehaviour
     public float delay = 1f; // Tiempo entre luces (en segundos)
 
     private void Awake()
-    {
-        luz_1.enabled = false;
-        luz_2.enabled = false;
-        luz_3.enabled = false;
+    { 
     }
     private void OnTriggerEnter(Collider other)
     {
