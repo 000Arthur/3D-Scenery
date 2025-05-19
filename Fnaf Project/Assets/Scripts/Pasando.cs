@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class BotonPuerta : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class BotonPuerta : MonoBehaviour
 
     public AudioSource Sound;
 
+    private bool puedeInteractuar = true;
     private void Awake()
     {
         input = new InputSystem_Actions();
@@ -45,13 +47,24 @@ public class BotonPuerta : MonoBehaviour
         if (Physics.Raycast(ray, out hit, range)) // metros de alcance
         {
             if (hit.collider.CompareTag(activator))
-            {
-                doorState = !doorState;
-                Sound.Play();
-            }
-            if (doorState) Door.Play("Cerrar");
-            else Door.Play("Abrir");
+               if (puedeInteractuar)StartCoroutine(ActivarPuertaConDelay(1.0f));
         }
+    }
+    private IEnumerator ActivarPuertaConDelay(float delay)
+    {
+        puedeInteractuar = false;
+
+        doorState = !doorState;
+        Sound.Play();
+
+        if (doorState)
+            Door.Play("Cerrar");
+        else
+            Door.Play("Abrir");
+
+        yield return new WaitForSeconds(delay);
+
+        puedeInteractuar = true;
     }
     private void MostrarIndicador()
     {
@@ -73,8 +86,8 @@ public class BotonPuerta : MonoBehaviour
                     // Hacer que mire hacia la cámara
                     textoTransform.LookAt(camaraJugador.transform);
                     textoTransform.Rotate(0, 180f, 0);
-
-                    return;
+                   
+                return;
                 
             }
         }

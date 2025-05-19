@@ -1442,8 +1442,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 47dd80d920c3ef3479dd99b416b950fa, type: 3}
-  m_Resource: {fileID: 8300000, guid: 47dd80d920c3ef3479dd99b416b950fa, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 584c75ce9b14d624b94c4cb9c3c9f3a9, type: 3}
+  m_Resource: {fileID: 8300000, guid: 584c75ce9b14d624b94c4cb9c3c9f3a9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.539
   m_Pitch: 1
@@ -16993,7 +16993,7 @@ MonoBehaviour:
   activator: Boton Puerta 2
   textoInteraccion: {fileID: 1336198605}
   textoTransform: {fileID: 1336198609}
-  Sound: {fileID: 1414868800}
+  Sound: {fileID: 39677909}
 --- !u!4 &748420263
 Transform:
   m_ObjectHideFlags: 0
@@ -29073,7 +29073,7 @@ MonoBehaviour:
   activator: Boton Puerta 1
   textoInteraccion: {fileID: 1390789401}
   textoTransform: {fileID: 1390789405}
-  Sound: {fileID: 1414868800}
+  Sound: {fileID: 39677909}
 --- !u!4 &1291088497
 Transform:
   m_ObjectHideFlags: 0
