@@ -1,10 +1,11 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class ClosetLightSwitch : MonoBehaviour
 {
     public Light closetLight;
-    public AudioSource clickSound;
+    public AudioSource Sound;
     public Renderer lampRenderer;
 
     public Color lightOnColor = Color.yellow;
@@ -12,8 +13,10 @@ public class ClosetLightSwitch : MonoBehaviour
 
     public Camera camaraJugador;
     public float range;
+    public string activator = "Boton supplyCloset";
 
-    public string activatorTag = "Boton supplyCloset";
+    public GameObject textoInteraccion;
+    public Transform textoTransform; // para cambiar posición/escala directamente
 
     private bool isOn = false;
     private InputSystem_Actions input;
@@ -21,7 +24,6 @@ public class ClosetLightSwitch : MonoBehaviour
     private void Awake()
     {
         input = new InputSystem_Actions();
-      
     }
 
     private void OnEnable()
@@ -35,41 +37,25 @@ public class ClosetLightSwitch : MonoBehaviour
         input.Gameplay.ToggleLight.performed -= IntentarActivarLuzInput;
         input.Gameplay.Disable();
     }
+    private void Update()
+    {
+        MostrarIndicador();
+    }
 
     private void IntentarActivarLuzInput(InputAction.CallbackContext context)
-    {
-        IntentarActivarLuz();
-    }
-
-
-    private void Start()
-    {
-        if (closetLight == null)
-            closetLight = GetComponentInChildren<Light>();
-
-        if (lampRenderer == null)
-            lampRenderer = GetComponentInChildren<MeshRenderer>();
-
-        closetLight.enabled = isOn;
-        ChangeLampColor(isOn);
-    }
-
-    void IntentarActivarLuz()
     {
         Ray ray = camaraJugador.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2));
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, range))
+        if (Physics.Raycast(ray, out hit, range)) // metros de alcance
         {
-            if (hit.collider.CompareTag(activatorTag) || Input.GetKeyDown(KeyCode.E))
+            if (hit.collider.CompareTag(activator))
             {
+                closetLight.enabled = !closetLight.enabled;
                 isOn = !isOn;
-                closetLight.enabled = isOn;
-
-                if (clickSound != null)
-                    clickSound.Play();
-
                 ChangeLampColor(isOn);
+                Sound.Play();
+
             }
         }
     }
@@ -91,5 +77,34 @@ public class ClosetLightSwitch : MonoBehaviour
                 lampRenderer.materials[1].DisableKeyword("_EMISSION");
             }
         }
+    }
+    private void MostrarIndicador()
+    {
+        Ray ray = camaraJugador.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2));
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, range))
+        {
+            float distancia = Vector3.Distance(camaraJugador.transform.position, hit.point);
+
+            if (hit.collider.CompareTag(activator))
+            {
+
+                textoInteraccion.SetActive(true);
+
+                // Coloca el texto justo frente al botón
+                textoTransform.position = hit.point;
+
+                // Hacer que mire hacia la cámara
+                textoTransform.LookAt(camaraJugador.transform);
+                textoTransform.Rotate(0, 180f, 0);
+
+                return;
+
+            }
+        }
+
+        // Si no estás mirando al botón
+        textoInteraccion.SetActive(false);
     }
 }
