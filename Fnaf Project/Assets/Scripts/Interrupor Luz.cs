@@ -12,6 +12,8 @@ public class BotonLuz : MonoBehaviour
     public GameObject textoInteraccion;
     public Transform textoTransform; // para cambiar posición/escala directamente
 
+    public AudioSource Sound;
+
     private void Awake()
     {
         input = new InputSystem_Actions();
@@ -42,6 +44,7 @@ public class BotonLuz : MonoBehaviour
             if (hit.collider.CompareTag(activator))
             {
                 luz.enabled = !luz.enabled;
+                Sound.Play();
             }
         }
     

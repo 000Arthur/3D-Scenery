@@ -13,6 +13,8 @@ public class BotonPuerta : MonoBehaviour
     public GameObject textoInteraccion;
     public Transform textoTransform; // para cambiar posición/escala directamente
 
+    public AudioSource Sound;
+
     private void Awake()
     {
         input = new InputSystem_Actions();
@@ -45,6 +47,7 @@ public class BotonPuerta : MonoBehaviour
             if (hit.collider.CompareTag(activator))
             {
                 doorState = !doorState;
+                Sound.Play();
             }
             if (doorState) Door.Play("Cerrar");
             else Door.Play("Abrir");
