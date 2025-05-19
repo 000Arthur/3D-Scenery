@@ -1400,6 +1400,135 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!1 &39677907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 39677908}
+  - component: {fileID: 39677909}
+  m_Layer: 0
+  m_Name: Door sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &39677908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39677907}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 41.86, y: 2.18, z: -1.02}
+  m_LocalScale: {x: 1.5491999, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1622913078}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &39677909
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39677907}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 47dd80d920c3ef3479dd99b416b950fa, type: 3}
+  m_Resource: {fileID: 8300000, guid: 47dd80d920c3ef3479dd99b416b950fa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.539
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 3.34754
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.25
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &41891332
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2586,7 +2715,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 75347209}
-  - component: {fileID: 75347208}
+  - component: {fileID: 75347210}
   m_Layer: 0
   m_Name: Luz Logic 2
   m_TagString: Untagged
@@ -2594,25 +2723,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &75347208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75347207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41076e8dd55f2484ba63ae8193c53734, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camaraJugador: {fileID: 90174759}
-  range: 2
-  luz: {fileID: 1642765097}
-  activator: Boton Luz 2
-  textoInteraccion: {fileID: 663644635}
-  textoTransform: {fileID: 663644639}
-  Sound: {fileID: 0}
 --- !u!4 &75347209
 Transform:
   m_ObjectHideFlags: 0
@@ -2635,6 +2745,25 @@ Transform:
   - {fileID: 1469475819}
   m_Father: {fileID: 1611165382}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &75347210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75347207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b44ed0822910d248b54a3a8f5299b1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camaraJugador: {fileID: 90174759}
+  range: 2
+  luz: {fileID: 1642765097}
+  activator: Boton Luz 2
+  textoInteraccion: {fileID: 663644635}
+  textoTransform: {fileID: 663644639}
+  Sound: {fileID: 1414868800}
 --- !u!1 &75759440
 GameObject:
   m_ObjectHideFlags: 0
@@ -30465,7 +30594,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1344388846}
-  - component: {fileID: 1344388845}
   - component: {fileID: 1344388847}
   m_Layer: 0
   m_Name: Luz Logic 1
@@ -30474,25 +30602,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1344388845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1344388844}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41076e8dd55f2484ba63ae8193c53734, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camaraJugador: {fileID: 90174759}
-  range: 2
-  luz: {fileID: 638297823}
-  activator: Boton Luz 1
-  textoInteraccion: {fileID: 539980146}
-  textoTransform: {fileID: 539980150}
-  Sound: {fileID: 0}
 --- !u!4 &1344388846
 Transform:
   m_ObjectHideFlags: 0
@@ -31706,7 +31815,7 @@ GameObject:
   - component: {fileID: 1414868799}
   - component: {fileID: 1414868800}
   m_Layer: 0
-  m_Name: Door sound
+  m_Name: Light sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31748,7 +31857,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 2.0205135
+  MinDistance: 3.34754
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -36151,6 +36260,7 @@ Transform:
   - {fileID: 1158577475}
   - {fileID: 1889996118}
   - {fileID: 1414868799}
+  - {fileID: 39677908}
   - {fileID: 312413679}
   m_Father: {fileID: 1611165382}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
