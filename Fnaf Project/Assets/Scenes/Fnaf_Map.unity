@@ -30466,6 +30466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1344388846}
   - component: {fileID: 1344388845}
+  - component: {fileID: 1344388847}
   m_Layer: 0
   m_Name: Luz Logic 1
   m_TagString: Untagged
@@ -30480,7 +30481,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1344388844}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41076e8dd55f2484ba63ae8193c53734, type: 3}
   m_Name: 
@@ -30508,6 +30509,25 @@ Transform:
   - {fileID: 638297825}
   m_Father: {fileID: 1611165382}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1344388847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344388844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b44ed0822910d248b54a3a8f5299b1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camaraJugador: {fileID: 90174759}
+  range: 2
+  luz: {fileID: 638297823}
+  activator: Boton Luz 1
+  textoInteraccion: {fileID: 539980146}
+  textoTransform: {fileID: 539980150}
+  Sound: {fileID: 1414868800}
 --- !u!4 &1347452095 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 581ec0eff11839c47a652133ae61d4ef, type: 3}

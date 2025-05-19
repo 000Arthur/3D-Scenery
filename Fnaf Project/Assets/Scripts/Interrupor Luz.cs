@@ -71,6 +71,7 @@ public class BotonLuz : MonoBehaviour
                 textoTransform.LookAt(camaraJugador.transform);
                 textoTransform.Rotate(0, 180f, 0);
 
+
                 return;
 
             }
