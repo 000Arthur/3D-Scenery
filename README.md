@@ -6,6 +6,10 @@ This Project is a Remake/Reimagination of the map of FNAF 1, a point and click i
 
 ## Trailer/Demo
 ![Demo](ReadmeResources/VideoMin.png)
+<p align="center">
+    <img src="ReadmeResources/VideoMin.png" alt="Demo" width="700">
+  </a>
+</p>
 <p align="center"><em>Click the image above to watch the full demonstration </em></p>
 
 ## Installation
