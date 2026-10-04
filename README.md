@@ -33,21 +33,38 @@ The original FNAF uses jumpscares to create fear. To survive, you must keep the 
 In the original game, you're confined to The Office.
 The rest of the building is only visible through the security cameras, which you use to track and deter the animatronics.
 We used these camera views as references to imagine and model how the actual location might look.
-<p align="center">
-    <img src="ReadmeResources/Cam2Insp.png" alt="Demo" width="500"><img src="ReadmeResources/Cam1Insp.png" alt="Demo" width="500">
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <img src="ReadmeResources/Cam2Insp.png" alt="Demo" width="500">
+    </td>
+    <td align="center">
+        <img src="ReadmeResources/Cam1Insp.png" alt="Demo" width="500">
+    </td>
+  </tr>
+</table>
 
 ### **Freddy Fazbear's Pizzeria - The place**
+
 - An old, 80’s children-targeted pizzeria.
 - Its main focus is to contrast a happy space with terror, putting an exaggerated focus on the kid’s experience.
 - Liminality, different zones that clash into each other.
 - Lights, sensorial inputs, children’s decorations.
-- Based on Chuck-e-cheese’s old birthday parties. 
-<p align="center">
-    <img src="ReadmeResources/InspirationMovieSet1.png" alt="Demo" width="265">
-    <img src="ReadmeResources/InspirationMovieSet2.png" alt="Demo" width="350">
-    <img src="ReadmeResources/InspirationMovieSet3.png" alt="Demo" width="345">
-</p>
+- Based on Chuck-e-cheese’s old birthday parties.
+  
+<table>
+  <tr>
+    <td align="center">
+      <img src="ReadmeResources/InspirationMovieSet1.png" alt="Demo" width="265">
+    </td>
+    <td align="center">
+      <img src="ReadmeResources/InspirationMovieSet2.png" alt="Demo" width="350">
+    </td>
+    <td align="center">
+      <img src="ReadmeResources/InspirationMovieSet3.png" alt="Demo" width="345">
+    </td>
+  </tr>
+</table>
 
 ### **Common points with the original media**
 We wanted to maintain:
