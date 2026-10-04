@@ -44,9 +44,9 @@ We used these camera views as references to imagine and model how the actual loc
 - Lights, sensorial inputs, children’s decorations.
 - Based on Chuck-e-cheese’s old birthday parties. 
 <p align="center">
-    <img src="ReadmeResources/InspirationMovieSet1.png" alt="Demo" width="280">
-    <img src="ReadmeResources/InspirationMovieSet2.png" alt="Demo" width="300">
-    <img src="ReadmeResources/InspirationMovieSet3.png" alt="Demo" width="300">
+    <img src="ReadmeResources/InspirationMovieSet1.png" alt="Demo" width="265">
+    <img src="ReadmeResources/InspirationMovieSet2.png" alt="Demo" width="350">
+    <img src="ReadmeResources/InspirationMovieSet3.png" alt="Demo" width="345">
 </p>
 
 ### **Common points with the original media**
