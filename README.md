@@ -128,3 +128,7 @@ _Joel Vicente_ « **Github**: [Jowy02](https://github.com/Jowy02)
 _Arthur Cordoba_ « **Github**: [000Arthur](https://github.com/000Arthur)
 
 _Jana Puig_ « **Github**: [JanaPuig](https://github.com/JanaPuig)
+
+_Albert Frederic « **Github**: [JanaPuig](https://github.com/Fredi223)
+
+
