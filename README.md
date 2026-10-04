@@ -1,12 +1,12 @@
-# 3D-Scenery-Fnaf
 **Github project page**: [https:///github.com/Jowy02/Motor-Grafico](https:///github.com/000Arthur/3D-Scenery)
 
 ## Description
-This Project is a Remake/Reimagination of the map of FNAF 1, a point and click indie horror game, as a walkable and interactive space, with modernized visuals and add ons to enhance it’s original vibe, all while staying canon.
-
+This Project is a Remake/Reimagination of the map of FNAF 1, a point and click indie horror game, as a walkable and interactive space, with modernized visuals and add ons to enhance it’s original vibe, all while staying canon. All environment assets were modeled and textured from scratch by our team, with the exception of the three animatronic models, which were sourced externally.
 ## Trailer/Demo
 <p align="center">
+  <a href="https://youtu.be/Uyv4eW_Ip6g">
     <img src="ReadmeResources/VideoMin.png" alt="Demo" width="750">
+  </a>
 </p>
 <p align="center"><em>Click the image above to watch the full demonstration </em></p>
 
@@ -18,8 +18,9 @@ This Project is a Remake/Reimagination of the map of FNAF 1, a point and click i
 
      * WASD = First-person movement
      * Left Shift = Sprint
-     * Mouse movement = Camera control
+     * Mouse = Camera control
      * E = Interact with objects
+     * F = Turn on/off flashlight
      
 ## Media References & Inspiration
 
@@ -33,10 +34,8 @@ In the original game, you're confined to The Office.
 The rest of the building is only visible through the security cameras, which you use to track and deter the animatronics.
 We used these camera views as references to imagine and model how the actual location might look.
 <p align="center">
-    <img src="ReadmeResources/Cam1Insp.png" alt="Demo" width="600">
-    <img src="ReadmeResources/Cam2Insp.png" alt="Demo" width="600">
+    <img src="ReadmeResources/Cam2Insp.png" alt="Demo" width="500"><img src="ReadmeResources/Cam1Insp.png" alt="Demo" width="500">
 </p>
-
 
 ### **Freddy Fazbear's Pizzeria - The place**
 - An old, 80’s children-targeted pizzeria.
@@ -45,7 +44,9 @@ We used these camera views as references to imagine and model how the actual loc
 - Lights, sensorial inputs, children’s decorations.
 - Based on Chuck-e-cheese’s old birthday parties. 
 <p align="center">
-    <img src="ReadmeResources/Inspiration.png" alt="Demo" width="600">
+    <img src="ReadmeResources/InspirationMovieSet1.png" alt="Demo" width="280">
+    <img src="ReadmeResources/InspirationMovieSet2.png" alt="Demo" width="300">
+    <img src="ReadmeResources/InspirationMovieSet3.png" alt="Demo" width="300">
 </p>
 
 ### **Common points with the original media**
@@ -74,25 +75,32 @@ With this approach, the player is guided not just by the map layout, but by illu
 At the same time, light and shadow help build tension and suggest unseen threats.
 
 ### **2D Map**
-- Camera Map from the game:
-<p align="center">
-    <img src="ReadmeResources/2DMap.png" alt="Im1" width="600">
-</p>
-- Our take :
-<p align="center">
-    <img src="ReadmeResources/OurTake.png" alt="Im2" width="600">
-</p>
+<table>
+  <tr>
+    <th>Camera Map from the original game</th>
+    <th>Our take</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="ReadmeResources/2DMap.png" alt="Original map" width="520">
+    </td>
+    <td align="center">
+      <img src="ReadmeResources/OurTake.png" alt="Our take" width="500">
+    </td>
+  </tr>
+</table>
 
 ### **Event direction**
 Since the player starts in The Office and must move through one of the hallways to reach the Dining Room, we scripted several events to enhance the horror experience:
 - Dynamic lighting
 - Automated spotlighting on animatronics
+
 Additional ambient events were also included, such as:
 - Flickering restroom lights
 - An endoskeleton jumpscare
-- 
+
 <p align="center">
-    <img src="ReadmeResources/EventDir.png" alt="Demo" width="600">
+    <img src="ReadmeResources/EventDir.png" alt="Demo" width="400">
 </p>
 
 ## Credits
