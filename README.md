@@ -4,6 +4,9 @@
 ## Description
 This Project is a Remake/Reimagination of the map of FNAF 1, a point and click indie horror game, as a walkable and interactive space, with modernized visuals and add ons to enhance it’s original vibe, all while staying canon.
 
+## Trailer/Demo
+
+
 ## Installation
 **_Unzip the [RELEASE FOLDER](https://github.com/000Arthur/3D-Scenery/releases) and execute the .exe file_**
 
@@ -15,9 +18,8 @@ This Project is a Remake/Reimagination of the map of FNAF 1, a point and click i
      * Mouse movement = Camera control
      * E = Interact with objects
      
-## Concept
+## Media References & Inspiration
 
-### **Media References & Inspiration**
 The original FNAF uses jumpscares to create fear. To survive, you must keep the animatronics out of The Office by managing limited resources:
 
 - Energy: Don’t run out of it.
@@ -42,11 +44,6 @@ We wanted to maintain:
 - Sharpness
 - Original lore and characters
 
-### **Hierarchy Improvements**
-- The **GameObject hierarchy** has been fixed and improved:  
-  - Adding child GameObjects works reliably.  
-  - Changing a GameObject’s parent now **properly updates all children**.
-
 ### **Changes and differences with the original media**
 Our Additions to the Concept:
 - Fully walkable map
@@ -55,6 +52,7 @@ Our Additions to the Concept:
 
 To achieve this, we carefully placed blinking lights and scripted events to unsettle the player. Low lighting and narrow corridors were key to building this tense, immersive experience.
 
+## Design
 ### **Illumination**
 As a horror game, atmosphere and sound design were crucial. They had to feel interactive and 
 alive. We focused on:
