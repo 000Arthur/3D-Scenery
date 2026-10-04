@@ -5,7 +5,7 @@
 This Project is a Remake/Reimagination of the map of FNAF 1, a point and click indie horror game, as a walkable and interactive space, with modernized visuals and add ons to enhance it’s original vibe, all while staying canon.
 
 ## Trailer/Demo
-![Demo](https://github.com/user-attachments/ReadmeResources/VidioMin)
+![Demo](https://github.com//ReadmeResources/VidioMin.PNG)
 <p align="center"><em>Click the image above to watch the full demonstration </em></p>
 
 ## Installation
